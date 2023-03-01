@@ -1,4 +1,4 @@
-from conf import *
+from .conf import *
 
 
 DJANGO_AND_THIRD_PARTY_APPS = [
@@ -15,7 +15,8 @@ DJANGO_AND_THIRD_PARTY_APPS = [
 ]
 
 PROJECT_APPS = [
-    
+    'auths.apps.AuthsConfig',
+    'marketplaces.apps.MarketplacesConfig',
 ]
 
 INSTALLED_APPS = DJANGO_AND_THIRD_PARTY_APPS + PROJECT_APPS
